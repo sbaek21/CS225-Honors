@@ -1,0 +1,116 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 11.66      0.45     0.45                             _init
+ 10.36      0.85     0.40                             huffmanDecodeSymbol(unsigned char const*, unsigned long*, HuffmanTree const*, unsigned long)
+  9.07      1.20     0.35                             encodeLZ77(uivector*, Hash*, unsigned char const*, unsigned long, unsigned long, unsigned int, unsigned int, unsigned int, unsigned int)
+  6.22      1.44     0.24                             addBitsToStreamReversed(unsigned long*, ucvector*, unsigned int, unsigned long)
+  5.18      1.64     0.20                             filter(unsigned char*, unsigned char const*, unsigned int, unsigned int, LodePNGColorMode const*, LodePNGEncoderSettings const*)
+  3.63      1.78     0.14                             std::__cxx1998::vector<unsigned char, std::allocator<unsigned char> >::operator[](unsigned long)
+  3.37      1.91     0.13                             updateHashChain(Hash*, unsigned long, unsigned int, unsigned short)
+  3.37      2.04     0.13                             readBitsFromStream(unsigned long*, unsigned char const*, unsigned long)
+  3.11      2.16     0.12                             cs225::hsl2rgb(cs225::hslaColor const&)
+  2.85      2.27     0.11                             cs225::rgb2hsl(cs225::rgbaColor const&)
+  2.33      2.36     0.09                             filterScanline(unsigned char*, unsigned char const*, unsigned char const*, unsigned long, unsigned long, unsigned char)
+  1.81      2.43     0.07                             List<int>::merge(List<int>::ListNode*, List<int>::ListNode*)
+  1.81      2.50     0.07                             cs225::PNG::getPixel(unsigned int, unsigned int)
+  1.81      2.57     0.07                             std::__cxx1998::vector<unsigned char, std::allocator<unsigned char> >::size() const
+  1.81      2.64     0.07                             std::__debug::vector<unsigned char, std::allocator<unsigned char> >::operator[](unsigned long)
+  1.55      2.70     0.06                             paethPredictor(short, short, short)
+  1.55      2.76     0.06                             update_adler32(unsigned int, unsigned char const*, unsigned int)
+  1.04      2.80     0.04                             lodepng_crc32(unsigned char const*, unsigned long)
+  1.04      2.84     0.04                             lodepng_get_color_profile(LodePNGColorProfile*, unsigned char const*, unsigned int, unsigned int, LodePNGColorMode const*)
+  1.04      2.88     0.04                             decodeGeneric(unsigned char**, unsigned int*, unsigned int*, LodePNGState*, unsigned char const*, unsigned long)
+  1.04      2.92     0.04                             searchCodeIndex(unsigned int const*, unsigned long, unsigned long)
+  1.04      2.96     0.04                             ucvector_push_back(ucvector*, unsigned char)
+  1.04      3.00     0.04                             inflateHuffmanBlock(ucvector*, unsigned char const*, unsigned long*, unsigned long*, unsigned long, unsigned int)
+  1.04      3.04     0.04                             getHash(unsigned char const*, unsigned long, unsigned long)
+  1.04      3.08     0.04                             cs225::PNG::_getPixelHelper(unsigned int, unsigned int) const
+  0.78      3.11     0.03                             ucvector_reserve(ucvector*, unsigned long)
+  0.78      3.14     0.03                             uivector_reserve(uivector*, unsigned long)
+  0.78      3.17     0.03                             getPixelColorsRGBA8(unsigned char*, unsigned long, unsigned int, unsigned char const*, LodePNGColorMode const*)
+  0.78      3.20     0.03                             __gnu_debug::_Sequence_traits<std::__debug::vector<int, std::allocator<int> > >::_S_size(std::__debug::vector<int, std::allocator<int> > const&)
+  0.78      3.23     0.03                             List<cs225::HSLAPixel>::ListNode::ListNode(cs225::HSLAPixel const&)
+  0.78      3.26     0.03                             std::__debug::vector<unsigned char, std::allocator<unsigned char> >::_M_base()
+  0.52      3.28     0.02                             lodepng_zlib_compress(unsigned char**, unsigned long*, unsigned char const*, unsigned long, LodePNGCompressSettings const*)
+  0.52      3.30     0.02                             writeLZ77data(unsigned long*, ucvector*, uivector const*, HuffmanTree const*, HuffmanTree const*)
+  0.52      3.32     0.02                             deflateDynamic(ucvector*, unsigned long*, Hash*, unsigned char const*, unsigned long, unsigned long, LodePNGCompressSettings const*, unsigned int)
+  0.52      3.34     0.02                             unfilterScanline(unsigned char*, unsigned char const*, unsigned char const*, unsigned long, unsigned char, unsigned long)
+  0.52      3.36     0.02                             __gthread_active_p()
+  0.52      3.38     0.02                             getPixelColorRGBA8(unsigned char*, unsigned char*, unsigned char*, unsigned char*, unsigned char const*, unsigned long, LodePNGColorMode const*)
+  0.52      3.40     0.02                             HuffmanTree_make2DTree(HuffmanTree*)
+  0.52      3.42     0.02                             List<int>::sort()
+  0.52      3.44     0.02                             cs225::HSLAPixel::HSLAPixel()
+  0.52      3.46     0.02                             __gnu_cxx::__normal_iterator<int const*, std::__cxx1998::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&)
+  0.52      3.48     0.02                             __gnu_debug::_Safe_iterator<__gnu_cxx::__normal_iterator<int*, std::__cxx1998::vector<int, std::allocator<int> > >, std::__debug::vector<int, std::allocator<int> >, std::forward_iterator_tag>::_M_get_sequence() const
+  0.52      3.50     0.02                             std::__cxx1998::vector<int, std::allocator<int> >::size() const
+  0.52      3.52     0.02                             std::enable_if<__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+  0.26      3.53     0.01                             boundaryPM(BPMLists*, BPMNode*, unsigned long, int, int)
+  0.26      3.54     0.01                             addBitsToStream(unsigned long*, ucvector*, unsigned int, unsigned long)
+  0.26      3.55     0.01                             addHuffmanSymbol(unsigned long*, ucvector*, unsigned int, unsigned int)
+  0.26      3.56     0.01                             uivector_push_back(uivector*, unsigned int)
+  0.26      3.57     0.01                             __gnu_debug::_Safe_iterator<__gnu_cxx::__normal_iterator<cs225::HSLAPixel*, std::__cxx1998::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> > >, std::__debug::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> >, std::forward_iterator_tag>::operator++()
+  0.26      3.58     0.01                             List<cs225::HSLAPixel>::ListIterator::operator*()
+  0.26      3.59     0.01                             List<cs225::HSLAPixel>::waterfall()
+  0.26      3.60     0.01                             List<int>::split(List<int>::ListNode*, int)
+  0.26      3.61     0.01                             List<int>::ListNode::ListNode(int const&)
+  0.26      3.62     0.01                             cs225::PNG::writeToFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.26      3.63     0.01                             cs225::PNG::readFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.26      3.64     0.01                             cs225::PNG::_copy(cs225::PNG const&)
+  0.26      3.65     0.01                             BlockPNG::genImg(std::__debug::vector<int, std::allocator<int> >, int)
+  0.26      3.66     0.01                             __gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)
+  0.26      3.67     0.01                             __gnu_cxx::__normal_iterator<int*, std::__cxx1998::vector<int, std::allocator<int> > >::__normal_iterator(int* const&)
+  0.26      3.68     0.01                             bool __gnu_cxx::operator==<cs225::HSLAPixel*, std::__cxx1998::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> > >(__gnu_cxx::__normal_iterator<cs225::HSLAPixel*, std::__cxx1998::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> > > const&, __gnu_cxx::__normal_iterator<cs225::HSLAPixel*, std::__cxx1998::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> > > const&)
+  0.26      3.69     0.01                             __gnu_debug::_Safe_iterator<__gnu_cxx::__normal_iterator<int*, std::__cxx1998::vector<int, std::allocator<int> > >, std::__debug::vector<int, std::allocator<int> >, std::forward_iterator_tag>::_M_incrementable() const
+  0.26      3.70     0.01                             __gnu_debug::_Safe_iterator<__gnu_cxx::__normal_iterator<int*, std::__cxx1998::vector<int, std::allocator<int> > >, std::__debug::vector<int, std::allocator<int> >, std::forward_iterator_tag>::base() const
+  0.26      3.71     0.01                             __gnu_debug::_Safe_iterator<__gnu_cxx::__normal_iterator<int*, std::__cxx1998::vector<int, std::allocator<int> > >, std::__debug::vector<int, std::allocator<int> >, std::forward_iterator_tag>::operator*() const
+  0.26      3.72     0.01                             cs225::PNG::width() const
+  0.26      3.73     0.01                             std::uniform_int_distribution<unsigned long>::param_type::b() const
+  0.26      3.74     0.01                             std::__cxx1998::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> >::_M_check_len(unsigned long, char const*) const
+  0.26      3.75     0.01                             std::__cxx1998::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> >::size() const
+  0.26      3.76     0.01                             std::__cxx1998::vector<int, std::allocator<int> >::empty() const
+  0.26      3.77     0.01                             int* std::__copy_move<false, false, std::bidirectional_iterator_tag>::__copy_m<List<int>::ListIterator, int*>(List<int>::ListIterator, List<int>::ListIterator, int*)
+  0.26      3.78     0.01                             void std::allocator_traits<std::allocator<int> >::construct<int, int>(std::allocator<int>&, int*, int&&)
+  0.26      3.79     0.01                             cs225::HSLAPixel* std::__uninitialized_copy<false>::__uninit_copy<List<cs225::HSLAPixel>::ListIterator, cs225::HSLAPixel*>(List<cs225::HSLAPixel>::ListIterator, List<cs225::HSLAPixel>::ListIterator, cs225::HSLAPixel*)
+  0.26      3.80     0.01                             std::pair<unsigned long, __gnu_debug::_Distance_precision>::pair<unsigned long, __gnu_debug::_Distance_precision, true>(unsigned long&&, __gnu_debug::_Distance_precision&&)
+  0.26      3.81     0.01                             std::__debug::vector<cs225::HSLAPixel, std::allocator<cs225::HSLAPixel> >::_M_base()
+  0.26      3.82     0.01                             std::__cxx1998::vector<int, std::allocator<int> >::end()
+  0.26      3.83     0.01                             std::__cxx1998::vector<int, std::allocator<int> >::begin()
+  0.26      3.84     0.01                             std::__cxx1998::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.26      3.85     0.01                             void std::_Construct<cs225::HSLAPixel, cs225::HSLAPixel const&>(cs225::HSLAPixel*, cs225::HSLAPixel const&)
+  0.26      3.86     0.01                             cs225::HSLAPixel const& std::forward<cs225::HSLAPixel const&>(std::remove_reference<cs225::HSLAPixel const&>::type&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
